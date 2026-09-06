@@ -26,7 +26,7 @@
    - `full-screen-api.warning.timeout`: `1000`
    - `media.autoplay.default`: `0`
 
-5. **Type** `$${\color{#ff65fc}\text{about:support` in the address bar and press <kbd>Enter</kbd>.
+5. **Type** `about:support` in the address bar and press <kbd>Enter</kbd>.
 6. **Scroll down** to the `Profile Folder` section and **click** `Open Folder`.
 7. **Download** the `chrome` file from this repository and place the folder into your Firefox profile directory.
 8. **Restart** Firefox to apply the changes.
