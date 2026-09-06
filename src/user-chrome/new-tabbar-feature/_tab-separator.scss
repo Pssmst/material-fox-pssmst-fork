@@ -1,8 +1,0 @@
-// new tab separator style
-.tab-content {
-  &::before,
-  &::after {
-    width: 2px !important;
-    height: 16px !important;
-  }
-}

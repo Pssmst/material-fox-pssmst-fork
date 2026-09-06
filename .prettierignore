@@ -1,7 +1,0 @@
-**/.git
-**/.husky
-**/node_modules
-
-# build files
-**/chrome
-**/examples

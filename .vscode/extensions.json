@@ -1,7 +1,0 @@
-{
-  "recommendations": [
-    "redhat.vscode-yaml",
-    "ms-vscode.vs-keybindings",
-    "naumovs.color-highlight"
-  ]
-}

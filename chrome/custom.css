@@ -1,0 +1,202 @@
+/* custom */
+
+/* Accurate chrome colors */
+:root,
+html,
+body {
+	--main: rgb(60, 60, 60);
+	--panel-background-color: var(--main);
+	--panel-border-color: var(--main);
+	--toolbar-background-color: var(--main);
+	--newtab-background-color: var(--main);
+	--tab-loading-fill: var(--main);
+	--tab-background-color-selected: var(--main);
+	--lwt-tab-line-color: var(--main);
+	--toolbarseparator-color: var(--main);
+	--urlbarview-background-color-selected: var(--main);
+	--sidebar-background-color: var(--main);
+	--sidebar-border-color: var(--main);
+	--tabpanel-background-color: var(--main);
+	--urlbar-box-background-color: var(--urlbar-box-background-color-focus);
+}
+
+/* Add separator on extension button just like Chrome */
+#unified-extensions-button {
+	filter: brightness(78%) !important;
+	margin-right: 7px !important;
+	padding-right: 10px !important;
+	height: 15.5px !important;
+	border-right: 2px solid rgb(113, 113, 113) !important;
+}
+
+/* Make search bar have rounded edges */
+#urlbar,
+.urlbar-background,
+.urlbar-input-container {
+	border-radius: 100px !important;
+}
+/* Reduce height of the search bar and address bar */
+#searchbar, #urlbar {
+	min-height: 24px !important;
+}
+#searchbar input, #urlbar-input-container {
+	min-height: 24px !important;
+}
+
+/* Make search mode button have rounded edges */
+.searchmode-switcher {
+	clip-path: inset(0 round 999px) !important;
+}
+
+/* Make refresh tab button a little smaller */
+#reload-button {
+	list-style-image: none !important;
+	background-image: var(--md-refresh-icon);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 20px;
+}
+
+/* Fix top-left border radius of top panels so the tabs merge properly */
+#nav-bar {
+	border-top-left-radius: 0px !important;
+}
+
+/* Customize home menu logo */
+@-moz-document url("about:newtab"), url("about:home") {
+	.logo {
+		background-image: url("file:///C:/Users/Owner/AppData/Roaming/Mozilla/Firefox/Profiles/jahxrhbi.default-release-1782940846641/chrome/logo.png") !important;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		transform: scale(130%) translateX(-40%) !important;
+	}
+	.wordmark {
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+		display: inline-block !important;
+		transform: scale(175%) translateX(15%) !important;
+	}
+}
+
+/* Fix for weird tab reordering bug */
+#TabsToolbar,
+#navigator-toolbox,
+#tabbrowser-tabs,
+.tabbrowser-tab,
+.tab-stack,
+#tabbrowser-arrowscrollbox-periphery {
+	left: auto !important;
+}
+
+/* Add proper padding to the Add-Bookmark panel */
+#editBookmarkPanel vbox {
+	padding: 4px 16px !important;
+}
+
+/* Hide the "___.com is now full screen" text */
+.pointerlockfswarning-domain-text,
+.pointerlockfswarning-generic-text {
+	display: none !important;
+}
+/* Make the fullscreen warning out container disappear */
+#fullscreen-warning {
+	background: transparent !important;
+	border: none !important;
+	box-shadow: none !important;
+	padding: 0 !important;
+	margin: 20px auto 0 !important;
+	min-width: unset !important;
+	width: fit-content !important;
+	border-radius: 999px !important;
+	transform: scale(95%);
+	margin-top: -20px !important;
+	border: 0px solid transparent !important;
+}
+/* Remove lock icon */
+#fullscreen-warning::before {
+	mask-image: none !important;
+	background: none !important;
+	content: none !important;
+}
+
+/* Circular fullscreen button */
+#fullscreen-exit-button {
+	width: 55px !important;
+	height: 55px !important;
+	min-width: 55px !important;
+	min-height: 55px !important;
+	padding: 0 !important;
+
+	border: 1px solid rgb(118, 118, 118) !important;
+	border-radius: 999px !important;
+    outline: none !important;
+    outline-offset: 0 !important;
+    appearance: none !important;
+    -moz-appearance: none !important;
+
+	background: rgba(35, 35, 35, 0.95) !important;
+	color: transparent !important;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.35) !important;
+
+	position: relative;
+	font-size: 0 !important;
+}
+#fullscreen-exit-button::before {
+	content: "✕";
+	position: absolute;
+	inset: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	color: white;
+	font-size: 24px;
+	font-weight: 300;
+	line-height: .5;
+}
+#fullscreen-exit-button:hover {
+	background: rgba(55, 55, 55, 0.95) !important;
+}
+
+/* Hide context menu options and separators */
+#context-back, #context-forward, #context-reload,
+#context-openlink,
+#context-openlinkinsplitview,
+#context-openlinkinusercontext-menu,
+#context-searchselect,
+#context-selectall,
+#context-savelink,
+
+#context-stripOnShareLink,
+
+#context-sep-sendpagetodevice,
+#context-sendpagetodevice,
+
+#context-sep-sendlinktodevice,
+#context-sendlinktodevice,
+
+#context-sep-navigation {
+	display: none !important;
+}
+
+/* Fix that AWFUL <select> bg-color bug */
+.menupopup-arrowscrollbox {
+	background-color: light-dark(rgb(219, 217, 219), rgb(18, 17, 19)) !important;
+}
+
+/* Return search bar to the top right of the page */
+.browserContainer > findbar {
+	-moz-box-ordinal-group: 0;
+	position: fixed !important;
+	right: 1em !important;
+	padding-left: 10px !important;
+	border-top: none !important;
+	box-shadow: none !important;
+  	background-image: none !important;
+}
+
+.findbar-closebutton {
+	margin-inline-start: 0.5em !important;
+	vertical-align: middle !important;
+}
