@@ -65,7 +65,8 @@ body {
 /* Customize home menu logo */
 @-moz-document url("about:newtab"), url("about:home") {
 	.logo {
-		background-image: url("file:///C:/Users/Owner/AppData/Roaming/Mozilla/Firefox/Profiles/jahxrhbi.default-release-1782940846641/chrome/logo.png") !important;
+		/* If logo.png is directly inside the chrome folder */
+		background-image: url("logo.png") !important;
 		background-size: contain !important;
 		background-repeat: no-repeat !important;
 		transform: scale(130%) translateX(-40%) !important;
