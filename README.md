@@ -8,20 +8,28 @@
 
 ## 🚀 Getting Started
 
-1. **Open** Firefox and type <code><span style="color:#1fe250;">about:config</span></code> in the address bar, then press <kbd>Enter</kbd>.
+1. **Open** Firefox and type `$${\color{#1fe250}\text{about:config}}$$` in the address bar, then press <kbd>Enter</kbd>.
 2. If a warning page appears, **click** `Accept the Risk and Continue` to access the `about:config` page.
 3. **Search** for the following preferences using the search bar at the top of the `about:config` page, and **ensure** the following preferences are `true`:
 
-   - <code><span style="color:#1fe250;">toolkit.legacyUserProfileCustomizations.stylesheets</span></code>
-   - <code><span style="color:#1fe250;">svg.context-properties.content.enabled</span></code>
-   - <code><span style="color:#1fe250;">userChrome.ui-chrome-refresh</span></code>
-   - <code><span style="color:#1fe250;">userChrome.theme-chrome-refresh</span></code>
-   - <code><span style="color:#1fe250;">userChrome.ui-system-font</span></code> (*Windows only*)
+   - `$${\color{#1fe250}\text{toolkit.legacyUserProfileCustomizations.stylesheets}}$$`
+   - `$${\color{#1fe250}\text{svg.context-properties.content.enabled}}$$`
+   - `$${\color{#1fe250}\text{userChrome.ui-chrome-refresh}}$$`
+   - `$${\color{#1fe250}\text{userChrome.theme-chrome-refresh}}$$`
+   - `$${\color{#1fe250}\text{userChrome.ui-system-font}}$$` (*Windows only*)
+   
+4. **Set** the following preferences to these specific values:
 
-4. **Type** <code><span style="color:#ff65fc;">about:support</span></code> in the address bar and press <kbd>Enter</kbd>.
-5. **Scroll down** to the `Profile Folder` section and **click** `Open Folder`.
-6. **Download** the `chrome` file from this repository and place the folder into your Firefox profile directory.
-7. **Restart** Firefox to apply the changes.
+   - `$${\color{#1fe250}\text{full-screen-api.transition-duration.enter}}$$`: `0 0`
+   - `$${\color{#1fe250}\text{full-screen-api.transition-duration.leave}}$$`: `0 0`
+   - `$${\color{#1fe250}\text{full-screen-api.transition.timeout}}$$`: `0`
+   - `$${\color{#1fe250}\text{full-screen-api.warning.timeout}}$$`: `1000`
+   - `$${\color{#1fe250}\text{media.autoplay.default}}$$`: `0`
+
+5. **Type** `$${\color{#ff65fc}\text{about:support}}$$` in the address bar and press <kbd>Enter</kbd>.
+6. **Scroll down** to the `Profile Folder` section and **click** `Open Folder`.
+7. **Download** the `chrome` file from this repository and place the folder into your Firefox profile directory.
+8. **Restart** Firefox to apply the changes.
 
 ## Credits
 
