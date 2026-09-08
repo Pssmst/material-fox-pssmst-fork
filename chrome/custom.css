@@ -1,6 +1,5 @@
 /* custom */
 
-/* Accurate chrome colors */
 :root,
 html,
 body {
@@ -18,6 +17,11 @@ body {
 	--sidebar-border-color: var(--main);
 	--tabpanel-background-color: var(--main);
 	--urlbar-box-background-color: var(--urlbar-box-background-color-focus);
+
+	/* Main Firefox purple-ish colors */
+	--color-gray-80:  hsl(0, 0%, 12%) !important;
+	--color-gray-90:  hsl(0, 0%, 8%)  !important;
+	--color-gray-100: hsl(0, 0%, 4%)  !important;
 }
 
 /* Add separator on extension button just like Chrome */
@@ -43,8 +47,8 @@ body {
 	min-height: 24px !important;
 }
 
-/* Make search mode button have rounded edges */
-.searchmode-switcher {
+/* Make address buttons have rounded edges */
+.searchmode-switcher, #trust-icon-container {
 	clip-path: inset(0 round 999px) !important;
 }
 
