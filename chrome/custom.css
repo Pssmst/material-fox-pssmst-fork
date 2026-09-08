@@ -185,9 +185,9 @@ body {
 	display: none !important;
 }
 
-/* Fix that AWFUL <select> bg-color bug */
+/* Fix <select> bg-color bug */
 .menupopup-arrowscrollbox {
-	background-color: light-dark(rgb(219, 217, 219), rgb(18, 17, 19)) !important;
+	background-color: light-dark(#fff, #1f1f1f) !important;
 }
 
 /* Return search bar to the top right of the page */
