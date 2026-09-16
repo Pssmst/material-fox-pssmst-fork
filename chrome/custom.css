@@ -18,6 +18,11 @@ body {
 	--tabpanel-background-color: var(--main);
 	--urlbar-box-background-color: var(--urlbar-box-background-color-focus);
 
+	/* Search address button */
+	--button-background-color-muted-hover: rgb(60,60,60) !important;
+	--button-background-color-muted-active: rgb(60,60,60) !important;
+	--button-background-color-muted: rgb(60,60,60) !important;
+
 	/* Main Firefox purple-ish colors */
 	--color-gray-80:  hsl(0, 0%, 12%) !important;
 	--color-gray-90:  hsl(0, 0%, 8%)  !important;
