@@ -4411,7 +4411,7 @@ findbar description.findbar-label {
     padding-bottom: 2px !important;
     padding-top: 2px !important;
     margin-inline-end: 4px !important;
-    margin-inline-start: 2px !important;
+    /*margin-inline-start: 2px !important;*/ /* Removed by pssmst fork */
   }
 }
 @media (-moz-pref("userChrome.ui-chrome-refresh")) and (not (-moz-pref("userChrome.ui-compact-url-bar"))) and (not (-moz-pref("userChrome.ui-force-old-icons"))) {

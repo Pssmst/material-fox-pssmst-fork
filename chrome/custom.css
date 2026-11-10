@@ -3,13 +3,12 @@
 :root,
 html,
 body {
-	--main: hsl(0, 0%, 24%);
+	--main: #3C3C3C;
 	--panel-background-color: var(--main);
 	--panel-border-color: var(--main);
 	--toolbar-background-color: var(--main);
 	--newtab-background-color: var(--main);
 	--tab-loading-fill: var(--main);
-	--tab-background-color-selected: var(--main);
 	--lwt-tab-line-color: var(--main);
 	--toolbarseparator-color: var(--main);
 	--urlbarview-background-color-selected: var(--main);
@@ -17,6 +16,11 @@ body {
 	--sidebar-border-color: var(--main);
 	--tabpanel-background-color: var(--main);
 	--urlbar-box-background-color: var(--urlbar-box-background-color-focus);
+
+	--tab-background-color: var(--main) !important;
+	--tab-background-color-selected: var(--main);
+	--md-tab-background-color-hover: hsl(0, 0%, 29%) !important;
+	--toolbar-bgcolor: var(--main) !important;
 
 	/* Search address button */
 	--button-background-color-muted-hover: hsl(0, 0%, 29%) !important;
@@ -44,6 +48,9 @@ body {
 .urlbar-input-container {
 	border-radius: 100px !important;
 }
+.urlbar {
+	height: 32px !important;
+}
 /* Reduce height of the search bar and address bar */
 #searchbar, #urlbar {
 	min-height: 24px !important;
@@ -52,9 +59,10 @@ body {
 	min-height: 24px !important;
 }
 
-/* Make address buttons have rounded edges */
+/* Make address buttons have rounded edges and non-variable height */
 .searchmode-switcher, #trust-icon-container {
 	clip-path: inset(0 round 999px) !important;
+	height: 24px !important;
 }
 
 /* Make refresh tab button a little smaller */
@@ -64,6 +72,11 @@ body {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 20px;
+}
+
+/* Remove tab outline */
+.tab-background {
+	outline: none !important;
 }
 
 /* Fix top-left border radius of top panels so the tabs merge properly */
@@ -101,6 +114,10 @@ body {
 /* Add proper padding to the Add-Bookmark panel */
 #editBookmarkPanel vbox {
 	padding: 4px 16px !important;
+}
+/* Make bookmarks panel a little shorter */
+#PlacesToolbar {
+	height: 29px !important;
 }
 
 /* Hide the "___.com is now full screen" text */
@@ -195,18 +212,19 @@ body {
 	background-color: light-dark(#fff, #1f1f1f) !important;
 }
 
-/* Return search bar to the top right of the page */
+/* Return ctrl+f find bar to the top right of the page */
 .browserContainer > findbar {
 	-moz-box-ordinal-group: 0;
 	position: fixed !important;
-	right: 1em !important;
-	padding-left: 10px !important;
-	border-top: none !important;
+	right: 195px !important;
 	box-shadow: none !important;
-  	background-image: none !important;
+	top: 70px !important;
 }
-
 .findbar-closebutton {
 	margin-inline-start: 0.5em !important;
 	vertical-align: middle !important;
 }
+/* Find Bar buttons
+findbar checkbox:hover {
+	background-color: blue !important;
+}*/
